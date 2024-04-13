@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab8_A01709890</title>
+
+    <!-- Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Laboratorio 8</h1>
+    </header>
+
+    <section class="datos">
+        <p onmouseover="cambiarColor()" id="info" onmouseleave="restaurarColor()" class="card-panel teal lighten-2 hoverable"> <strong>Nombre: </strong> Carlos Alejandro Galicia Silva <br>
+            <strong>Matrícula: </strong>A01709890 <br>
+            <strong>Correo: </strong>A01709890@tec.mx
+        </p>
+    </section>
+
+
+    <section class="preguntas">
+        <h3>Preguntas</h3>
+        <div class="row">
+            <div class="col s12 red lighten-2 hoverable">
+                <p class="flow-text"><strong>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos
+                        los inputs de las formas antes de enviar los datos al servidor?:</strong><br><br>
+                    Porque validar los inputs ayuda a mejorar la experiencia del usuario, reducir la carga en el
+                    servidor, aumentar la seguridad y a facilitar la corrección de errores en los formularios web.</p>
+            </div>
+            <div class="col s12 pink lighten-2 hoverable">
+                <p class="flow-text"><strong>¿Cómo puedes saltarte la seguridad de validaciones hechas con
+                        JavaScript?:</strong><br><br>
+                    Puedes desactivar JavaScript en el navegador o modificar el código fuente de la página web y usar
+                    herramientas de desarrollo del navegador si se tiene acceso al codigo fuente de la pagina.</p>
+            </div>
+            <div class="col s12 purple lighten-2 hoverable">
+                <p class="flow-text"><strong>Si te puedes saltar la seguridad de las validaciones de JavaScript,
+                        entonces ¿por qué la primera pregunta dice que es una buena práctica?:</strong><br><br>
+                    Debido que la seguridad de las validaciones de Javascript no depende enteramente de la primera
+                    práctica si no tambien de la validacion y procesamiento de datos de la parte del backend. A pesar de
+                    que tambien es necesario implementar seguridad del lado del servidor, tener esta práctica ayuda a
+                    aumentar la seguridad del lado del cliente.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <h3>Referencias:</h3>
+    <div id="infoBox">
+        <p>Haz click sobre los links para ir a la pagina.</p>
+      </div>
+      
+    <section class="grey lighten-2" id="referencias">
+        <p class="flow-text">Validación de formularios de datos - Aprende desarrollo web | MDN. (2023, 1 septiembre). MDN Web Docs. <a href="https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation">https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation</a></p>
+        <p class="flow-text">Ada. (2020, 12 septiembre). Cómo saltarse la validación HTML5 de un formulario.  <a href="https://didacticode.com/como-saltarse-validacion-html5-formulario/">https://didacticode.com/como-saltarse-validacion-html5-formulario/</a></p> 
+        <p class="flow-text">Ada. (2020a, julio 12). ¿Es seguro validar un formulario con Javascript? <a href="https://didacticode.com/seguro-validar-formulario-javascript/">https://didacticode.com/seguro-validar-formulario-javascript/</a></p>
+    </section>
+
+    <footer class="card-panel teal lighten-2 hoverable">
+        <p class="flow-text"> <strong>Editor utilizado: </strong> Visual Studio Code: <a class="blue-text text-darken-3"
+                href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+    </footer>
+
+
+
+</body>
+<script src="script.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
