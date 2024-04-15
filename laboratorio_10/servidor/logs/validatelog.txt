@@ -1,0 +1,4 @@
+con1: hola1  -  con2:hola2 
+con1: prueba2  -  con2:prueba3 
+con1: con1  -  con2:con2 
+con1: 100  -  con2:102 
