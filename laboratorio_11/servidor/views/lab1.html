@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1_A01709890</title>
+
+    <!-- Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        
+</head>
+
+<body>
+    <header>
+        <h1>Laboratorio 1</h1>
+    </header>
+
+    <section class="datos">
+        <p class="card-panel teal lighten-2 hoverable"> <strong>Nombre: </strong> Carlos Alejandro Galicia Silva <br>
+            <strong>Matrícula: </strong>A01709890 <br>
+            <strong>Correo: </strong>A01709890@tec.mx
+        </p>
+    </section>
+
+
+    <section class="preguntas">
+        <h3>Preguntas</h3>
+        <div class="row">
+            <div class="col s12 red lighten-2 hoverable"><p class="flow-text"><strong>¿Cuál es la diferencia entre Internet y la World Wide Web?:</strong><br><br>
+                El Internet es la red global de computadoras, mientras que la World Wide Web es una de las muchas
+                aplicaciones que se ejecutan en esta red, lo que permite el acceso y la visualización de información a
+                través de páginas web.</p></div>
+            <div class="col s12 pink lighten-2 hoverable"><p class="flow-text"><strong>¿Cuáles son las partes de un URL?:</strong><br><br>
+                Un URL normalmente consta de un esquema, nombre de dominio, ruta y, en algunos casos, puede incluir
+                parámetros y fragmentos.</p>
+            </div>
+            <div class="col s12 purple lighten-2 hoverable"><p class="flow-text"><strong>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?:</strong><br><br>
+                GET se utiliza para solicitar datos de un recurso específico en el servidor. <br>
+                HEAD es similar a GET, pero solo devuelve los encabezados de la respuesta, sin el cuerpo del mensaje.
+                <br>
+                POST se utiliza para enviar datos al servidor para que sean procesados. <br>
+                PUT se utiliza para enviar datos al servidor para actualizar o crear un recurso en una ubicación
+                específica. <br>
+                PATCH es similar a PUT, pero se utiliza para realizar modificaciones parciales en un recurso en lugar de
+                reemplazarlo completamente. <br>
+                DELETE se utiliza para eliminar un recurso específico en el servidor.</p>
+            </div>
+            <div class="col s12 deep-purple lighten-2 hoverable"><p class="flow-text"><strong>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu
+                usuario y contraseña en algún sitio? ¿Por qué?:</strong> <br><br>
+            Se usa el metodo POST debido a que hace los datos menos visibles al enviar los datos al cuerpo de la
+            solicitud HTTP, permite enviar datos más grandes como contraseñas mas largas y la solicitudes POST no se
+            almacenan en el cache.</p>
+            </div>
+            <div class="col s12 indigo lighten-2 hoverable"><p class="flow-text"><strong>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través
+                de un URL?:</strong> <br><br>
+            El método GET.</p>
+            </div>
+            <div class="col s12 blue lighten-2 hoverable"><p class="flow-text"><strong>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún
+                error?:
+            </strong> <br><br>
+            No, el código 200 significa que la solicitud se a completado con éxito.</p>
+            </div>
+            <div class="col s12 light-blue lighten-2 hoverable"><p class="flow-text"><strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó
+                acceder al sitio y se encontró con un error 404? ¿Por qué?:
+            </strong> <br><br>
+            Si, debido a que usualmente los errores 404 se deben a enlaces rotos o paginas eliminadas por el
+            desarrollador, además de que daña el ranking y la reputación del sitio.</p>
+            </div>
+            <div class="col s12 cyan lighten-2 hoverable"><p class="flow-text"><strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó
+                acceder al sitio y se encontró con un error 500? ¿Por qué?:
+            </strong> <br><br>
+            Si, debido a que el error 500 inidica un problema interno del servidor que impide que se sirva el
+            contenido solicidado y no se procese la solicitud del usuario, lo que significa que no es
+            responsabilidad del cliente y el desarrollador debe solucionarlos ya que estos también pueden ser
+            resultado de vulnerabilidades de seguridad.</p>
+            </div>
+            <div class="col s12 teal lighten-2 hoverable"><p class="flow-text"><strong>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona
+                algunos elementos de HTML 4 que en HTML5 estén desaprobados:
+            </strong> <br><br>
+            Significa que es obsoleto y que puede ser no compatible con las ultimas versiones de HTML, algunos
+            elementos desaprobados son font, center, strike y acronym.</p>
+            </div>
+            <div class="col s12 green lighten-2 hoverable"><p class="flow-text"><strong>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?:
+            </strong> <br><br>
+            HTML5 tiene una semántica mejorada, incluye elementos nativos como audio y video, formularios mejorados
+            y mayor compatibilidad con dispositivos moviles.</p>
+            </div>
+            <div class="col s12 light-green lighten-2 hoverable"><p class="flow-text"><strong>¿Qué componentes de estructura y estilo tiene una tabla?:
+            </strong> <br><br>
+            Los componentes principales son tr, th, td, thead, tbody, tfoot, etc. Mientras que en CSS tiene reglas
+            de estilo que cambian propiedades de tipo tabla, celda, fila, encabezado, etc.</p>
+            </div>
+            <div class="col s12 lime lighten-2 hoverable"><p class="flow-text"><strong>¿Cuáles son los principales controles de una forma HTML5?:
+            </strong> <br><br>
+            Los principales son el elemento input y el control type, el cual puede ser text, password, email, tel,
+            number, etc, lo que permite al usuario ingresar datos de tipos diferentes. Además se encuentran el
+            select, textarea, button para poder crear un formulario.</p>
+            </div>
+            <div class="col s12 yellow lighten-2 hoverable"><p class="flow-text"><strong>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página
+                para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que
+                utilizas)</strong> <br><br>
+            La aplicacion web fue descontinuada el 10 de Enero de 2024. Sin embargo el navegador que utilizo
+            actualmente, Google Chrome tiene un puntaje de 581/594.</p>
+            </div>
+            <div class="col s12 amber lighten-2 hoverable"><p class="flow-text"><strong>¿Cuál es el ciclo de vida de los sistemas de información?:</strong> <br><br>
+                Es un proceso que describe el uso de un sistema desde su concepcion hasta su retiro. Consta de diversas
+                etapas, las cuales son: Identificacion de necesidades y análisis, diseño, desarrollo
+                e implementacion, operacion y mantenimiento, evaluacion y mejora y retiro o desuso.</p>
+            </div>
+            <div class="col s12 orange lighten-2 hoverable"><p class="flow-text"><strong>¿Cuál es el ciclo de desarrollo de sistemas de información?:</strong> <br><br>
+                Es un ciclo que describe al proceso para crear sistemas eficaces y funcionales. Consta de las siguientes
+                etapas, las cuales son: Planificacion y análisis de requerimientos, diseño del sistema, implementacion y
+                desarrollo, despliegue y puesta en marcha, operacion y mantenimiento y evaluación y retroalimentacion.</p>
+            </div>
+        </div>
+    </section>
+
+    <h3>Referencias:</h3>
+    <section class="grey lighten-2">
+        <p class="flow-text">HTTP request methods - HTTP | MDN. (2023, 10 abril). MDN Web Docs. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</a></p>
+        <p class="flow-text">HTTP response status codes - HTTP | MDN. (2023, 3 noviembre). MDN Web Docs. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#server_error_responses">https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#server_error_responses</a></p> 
+        <p class="flow-text">HTTP response status codes - HTTP | MDN. (2023, 3 noviembre). MDN Web Docs. <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#server_error_responses</a></p>
+    </section>
+
+    <footer class="card-panel teal lighten-2 hoverable" >
+        <p class="flow-text"> <strong>Editor utilizado: </strong> Visual Studio Code: <a class="blue-text text-darken-3" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+    </footer>
+</body>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
