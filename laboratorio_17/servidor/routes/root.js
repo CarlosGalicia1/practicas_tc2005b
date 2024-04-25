@@ -8,10 +8,12 @@ const lab8controller = require('../controllers/Lab8Controller');
 const lab11controller = require('../controllers/Lab11Controller');
 const lab12controller = require('../controllers/Lab12Controller');
 const lab13controller = require('../controllers/Lab13Controller');
+const lab17controller = require('../controllers/Lab17Controller');
 const generatepasswordcontroller = require('../controllers/GeneratePasswordController');
 const cookiescontroller = require('../controllers/CookiesController');
 
-router.get('^/$|/index(.html)?', lab13controller.get);
+router.get('^/$|/index(.html)?', lab17controller.get);
+router.get('^/$|/lab13(.html)?', lab13controller.get);
 router.get('^/$|/lab12(.html)?', lab12controller.get);
 router.get('^/$|/lab11(.html)?',lab11controller.get);
 router.get('^/$|/lab8(.html)?', lab8controller.get);
