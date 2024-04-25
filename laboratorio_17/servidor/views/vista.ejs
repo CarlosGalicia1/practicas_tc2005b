@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuarios y sus Contraseñas</title>
+</head>
+<body>
+    <h1>Lista de Usuarios y sus Contraseñas</h1>
+    <ul>
+        <% usuarios.forEach(usuario => { %>
+            <li><strong><%= usuario.usuario %>:</strong>  <%= usuario.password %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
