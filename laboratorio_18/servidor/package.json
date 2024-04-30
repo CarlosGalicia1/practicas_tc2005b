@@ -1,0 +1,27 @@
+{
+  "name": "servidor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "csurf": "^1.11.0",
+    "date-fns": "^3.6.0",
+    "ejs": "^3.1.10",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.9.7",
+    "root": "^3.2.0",
+    "uuid": "^9.0.1"
+  }
+}

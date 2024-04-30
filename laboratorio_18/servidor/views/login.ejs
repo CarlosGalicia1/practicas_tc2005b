@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Compiled and minified CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <link rel="stylesheet" href="../css/validate_style.css">
+        <title> Login</title>
+    </head>
+    <body>
+        <%- include('./partials/header'); %>
+        <section>
+            <div class="formulario">
+                <div class="form_value">
+                    <form method="POST" action="/login">
+                        <h2>Login</h2>
+                        <div class="inputbox">
+                            <input id="con1" type="text" name="con1" required placeholder="Usuario">
+
+                        </div>
+                        <div class="inputbox">
+                            <input id="con2" type="password" name="con2" required placeholder="Password">
+                        </div>
+                        <button type="submit" id="submitbutton">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html> 

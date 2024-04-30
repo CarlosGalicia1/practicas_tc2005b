@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab18_A01709890</title>
+
+    <!-- Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <%- include('./partials/header'); %>
+            <h1>Laboratorio 18</h1>
+    </header>
+
+    <section class="datos">
+        <p onmouseover="cambiarColor()" id="info" onmouseleave="restaurarColor()"
+            class="card-panel teal lighten-2 hoverable"> <strong>Nombre: </strong> Carlos Alejandro Galicia Silva <br>
+            <strong>Matrícula: </strong>A01709890 <br>
+            <strong>Correo: </strong>A01709890@tec.mx
+        </p>
+    </section>
+
+
+    <section class="preguntas">
+        <h3>Preguntas</h3>
+        <div class="row">
+            <div class="col s12 red lighten-2 hoverable">
+                <p class="flow-text"><strong>¿Qué otras formas de autentificación existen?:</strong><br><br>
+                    Existe la autentificación utilizando JSON Web Tokens, los cuales se "firman" de forma digital
+                    utilizando una función hash criptográfica para asegurar que el JWT no ha sido alterado y proviene de
+                    una fuente de confianza. Tambien existe OAuth, el cual es un protocolo que permite que las
+                    aplicaciones accedan a los recursos protegidos en nombre del usuario, utilizándose para acceder a
+                    servicios de terceros como iniciar sesión con Google o Facebook.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="card-panel teal lighten-2 hoverable">
+        <%- include('./partials/footer'); %>
+    </footer>
+
+
+
+</body>
+<script src="script.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
