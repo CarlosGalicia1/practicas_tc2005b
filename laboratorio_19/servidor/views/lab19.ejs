@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab19_A01709890</title>
+
+    <!-- Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Laboratorio 19</h1>
+    </header>
+
+    <section class="datos">
+        <p onmouseover="cambiarColor()" id="info" onmouseleave="restaurarColor()"
+            class="card-panel teal lighten-2 hoverable"> <strong>Nombre: </strong> Carlos Alejandro Galicia Silva <br>
+            <strong>Matrícula: </strong>A01709890 <br>
+            <strong>Correo: </strong>A01709890@tec.mx
+        </p>
+    </section>
+
+
+    <section class="preguntas">
+        <h3>Preguntas</h3>
+        <div class="row">
+            <div class="col s12 red lighten-2 hoverable">
+                <p class="flow-text"><strong>¿En qué consiste el control de acceso basado en roles? :</strong><br><br>
+                    Es un método que ayuda a asignar roles a usuarios y luego asignar permisos a esos roles en lugar de
+                    otorgar privilegios de acceso de forma individual a usuarios específicos. Primero se identifican los
+                    roles que existen en el sistema y se asignan los roles específicos a los usuarios basado en su
+                    función en la organización. Después se definen los permisos o acciones que cada rol puede realizar
+                    en el sistema y también se comprueba si el usuario tiene el rol necesario para acceder a un recurso
+                    o función en el sistema.</p>
+            </div>
+            <div class="col s12 pink lighten-2 hoverable">
+                <p class="flow-text"><strong>Investiguen y describan 2 sistemas, uno que aplique RBAC y uno que no.
+                        Realicen un análisis de las ventajas y desventajas de cada uno con respecto al control de
+                        acceso.:</strong><br><br>
+                    Existe el Sistema de Gestión de Recursos Humanos, el cual aplica RBAC con los beneficioes de
+                    facilitar la asignación y revocación de permisos al agruparlos en roles determinados además de
+                    reducir la posibilidad de errores humanos en la asignación de permisos así como el riesgo de acceso
+                    no autorizado a información sensible. Las desventajas principales son que tiene una complejidad
+                    inicial mayor, además de que puede ser dificil gestionar excepciones donde usuarios tiene
+                    necesidades de acceso únicas sin comprometer la integridad del RBAC. <br> <br>
+                    Por otro lado existe el sistema de archivos tradicional de un sistema operativo como Windows o Linux
+                    donde el control de acceso no se basa en roles predefinidos, sino en permisos asignados directamente
+                    a los usuarios. Las ventajas de esto es que los permisos se pueden asignar de forma específica
+                    adaptandose a las responsabilidades y necesidades de acceso de los usuarios, además de que los
+                    administradores pueden tener un control total de los permisos y pueden ajustarlos segun sea
+                    necesario. Sin embargo, una de las desventajas principales es que conforme crece la cantidad de
+                    usuarios, la comlejidad de la gestion individual de los mismos crece, lo que puede conducir a una
+                    mayor probabilidad de presencia de errores de seguridad. </p>
+            </div>
+        </div>
+    </section>
+
+    <h3>Referencias:</h3>
+
+    <section class="grey lighten-2" id="referencias">
+        <p class="flow-text">¿Qué es el control de acceso basado en roles (RBAC)? | Cloudflare. (s. f.). <a
+                href="https://www.cloudflare.com/es-es/learning/access-management/role-based-access-control-rbac/">https://www.cloudflare.com/es-es/learning/access-management/role-based-access-control-rbac/</a>
+        </p>
+        <p class="flow-text">RBAC vs ABAC: ¿Cuál elegir? (s. f.). Ingecom. <a
+                href="https://www.ingecom.net/es/blog/320/rbac-vs-abac-cual-elegir/">https://www.ingecom.net/es/blog/320/rbac-vs-abac-cual-elegir/</a>
+        </p>
+    </section>
+
+    <footer class="card-panel teal lighten-2 hoverable">
+    </footer>
+
+
+
+</body>
+<script src="script.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
