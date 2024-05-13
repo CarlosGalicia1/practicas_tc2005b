@@ -1,7 +1,6 @@
-var path = require('path');
 const log = console.log
-
 const multer = require('multer'); // Using Promise API
+var path = require('path');
 
 const storage = multer.diskStorage({
     destination: function (req, file, callback) {
@@ -14,7 +13,7 @@ const storage = multer.diskStorage({
     }
 });
 
-var upload = multer({ storage: storage }).array('file', 1);
+const upload = multer({ storage: storage }).array('file', 1);
 
 const storage2 = multer.diskStorage({
     destination: function (req, file, callback) {
@@ -25,21 +24,20 @@ const storage2 = multer.diskStorage({
         return callback(null,file.originalname);
     }
 });
+
 const upload2 = multer({ storage : storage2 }).array('file',1);
 
 module.exports.upload_file = async (req, res) => {
     log("Cargando el archivo")
-    module.exports.upload_file = async (req, res) => {
-        upload(req, res, function (err) {
-            if (err) {
-                console.error(err);
-                return res.status(500).json({ code: 500, msg: "Error uploading file" });
-            }
-    
-            console.log("Upload Successful:", req.files); // Log uploaded files
-            res.status(200).json({ code: 200, msg: "Ok" });
-        });
-    }
+    upload(req, res, function (err) {
+        if (err) {
+            console.error(err);
+            return res.status(500).json({ code: 500, msg: "Error uploading file" });
+        }
+
+        console.log("Upload Successful:", req.files); // Log uploaded files
+        res.status(200).json({ code: 200, msg: "Ok" });
+    });
 }
 
 module.exports.upload_file_private = async (req, res) => {
