@@ -25,7 +25,6 @@ router.get('/status', (req, res) => {
 
 router.post('/turn', (req, res) => {
     const { playerNumber, coordinates } = req.body;
-
     try {
         const hit = game.makeMove(playerNumber, coordinates);
         res.status(200).json({ hit });

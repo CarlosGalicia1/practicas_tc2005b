@@ -42,28 +42,47 @@ class Game {
     }
 
     makeMove(playerNumber, coordinates) {
-        if (this.status !== 'JUGANDO') {
-            throw new Error('Game is not in a playable state');
+        if (this.status === 'INICIADO' || this.status === 'FINALIZADO') {
+            return { error: 'El juego no está en estado activo.' };
         }
+
         const opponent = playerNumber === 1 ? 2 : 1;
-        const hit = this.players[opponent-1].ships.some(ship =>
-            ship.some(([x, y]) => x === coordinates[0] && y === coordinates[1])
+        const [x, y] = coordinates;
+
+        // Verificar si ya se hizo un movimiento en esta coordenada
+        if (this.players[playerNumber - 1].hits.some(hit => hit.x === x && hit.y === y) ||
+            this.players[playerNumber - 1].misses.some(miss => miss.x === x && miss.y === y)) {
+            return { error: 'Movimiento ya realizado en esta coordenada.' };
+        }
+
+        let hit = false;
+        //Verificar si el barco a sido golpeado
+        if (this.players[opponent - 1].ships[x][y] == 1) {
+            this.players[playerNumber - 1].hits.push({ x, y });
+            this.turn = playerNumber;
+            hit = true;
+        }
+
+        if (!hit) {
+            this.players[playerNumber - 1].misses.push({ x, y });
+            // Alternar turno
+            this.turn = opponent;
+        }   
+
+
+        // Verificar si el juego ha terminado
+        console.log(this.players[playerNumber - 1].hits);
+        const allShipsSunk = this.players[opponent - 1].ships.every((row, rowIndex) =>
+            row.every((cell, colIndex) => cell === 0 || this.players[playerNumber - 1].hits.some(hit => hit.x === rowIndex && hit.y === colIndex))
         );
 
-        if (hit) {
-            this.players[playerNumber-1].hits.push(coordinates);
-        } else {
-            this.players[playerNumber-1].misses.push(coordinates);
-            this.turn = opponent;
+        console.log(allShipsSunk);
+        if (allShipsSunk) {
+            this.status = 'FINALIZADO';
         }
+        
 
-        if (this.players[opponent-1].ships.every(ship => 
-            ship.every(([x, y]) => this.players[playerNumber-1].hits.some(([hx, hy]) => hx === x && hy === y))
-        )) {
-            this.state = 'FINALIZADO';
-        }
-
-        return hit;
+        return { hit, status: this.status };
     }
 }
 
