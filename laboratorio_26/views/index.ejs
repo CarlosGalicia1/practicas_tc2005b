@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla Naval</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .ship {
+            background-color: gray;
+        }
+        .hit {
+            background-color: red;
+        }
+        .miss {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button id="createGameBtn">Crear Nuevo Juego</button>
+    <button id="placeShipsBtn">Colocar Barcos</button>
+    <button id="gameStatusBtn">Obtener Estado del Juego</button>
+    <button id="diceBtn">Lanzar Moneda</button>
+    <input type="text" id="coordinatesInput" placeholder="Ingresa coordenadas (x,y)">
+    <button id="submitCoordinatesBtn">Enviar Coordenadas</button>
+    <div id="gameBoard"></div>
+
+</body>
+<script src="/app.js"></script>
+</html>
